@@ -2,30 +2,31 @@
   "context": {
     "domain": "ONDC:LOG10",
     "country": "IND",
-    "city": "std:011",
-    "action": "on_issue",
+    "city": "std:080",
+    "action": "issue",
     "core_version": "1.2.5",
     "bap_id": "dev-automation.ondc.org",
-    "bap_uri": "http://localhost:7123/api-service/ONDC:LOG10/1.2.5/buyer",
-    "message_id": "e5977e22-7f3e-4264-8cda-fadacfbf9d2a",
-    "timestamp": "2025-05-21T07:19:40.967Z",
-    "transaction_id": "a337f88b-2e67-43d4-9b65-5fd03b4eaf74",
+    "bap_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/buyer",
+    "message_id": "410d64de-3943-4255-a66f-91cca0b636d5",
+    "timestamp": "2025-05-28T06:50:09.668Z",
+    "transaction_id": "0bfd0f8e-17ae-4073-83db-4f8ab81d612a",
+    "ttl": "PT30S",
     "bpp_id": "dev-automation.ondc.org",
-    "bpp_uri": "http://localhost:7123/api-service/ONDC:LOG10/1.2.5/seller"
+    "bpp_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/seller"
   },
   "message": {
     "update_target": [
       {
-        "path": "issue.actions",
+        "path": "issue.actions[?(@.id=='A12')]",
         "action": "APPENDED"
       }
     ],
     "issue": {
       "id": "ISSUE-1",
-      "status": "OPEN",
+      "status": "CLOSED",
       "level": "ISSUE",
-      "created_at": "2025-05-21T07:07:08.961Z",
-      "updated_at": "2025-05-21T07:19:40.973Z",
+      "created_at": "2025-05-28T06:49:54.727Z",
+      "updated_at": "2025-05-28T06:50:09.670Z",
       "expected_response_time": {
         "duration": "PT2H"
       },
@@ -120,9 +121,14 @@
             "url": "http://buyerapp.com/addtional-details/img1.png",
             "size_type": "xs"
           }
+        ],
+        "media": [
+          {
+            "url": "https://transitsolutions.in/logos/logo.icon"
+          }
         ]
       },
-      "last_action_id": "issue",
+      "last_action_id": "on_issue",
       "actions": [
         {
           "id": "A1",
@@ -156,7 +162,7 @@
             "short_desc": "Please provide product image"
           },
           "updated_at": "2023-01-15T10:00:00.469Z",
-          "action_by": "NP2",
+          "action_by": "NP1",
           "actor_details": {
             "name": "Sam Manuel"
           }
@@ -169,7 +175,7 @@
             "short_desc": "Please provide invoice"
           },
           "updated_at": "2023-01-15T10:00:00.469Z",
-          "action_by": "NP2",
+          "action_by": "NP1",
           "actor_details": {
             "name": "Sam Manuel"
           }
@@ -293,6 +299,18 @@
           "actor_details": {
             "name": "Sam Manuel"
           }
+        },
+        {
+          "id": "A12",
+          "descriptor": {
+            "code": "CLOSED",
+            "short_desc": "Closing the complaint"
+          },
+          "updated_at": "2023-01-15T10:00:00.469Z",
+          "action_by": "NP1",
+          "actor_details": {
+            "name": "Sam Manuel"
+          }
         }
       ],
       "resolutions": [
@@ -363,8 +381,7 @@
             }
           ]
         }
-      ],
-      "complaint_id": "NP1"
+      ]
     }
   }
 }

@@ -2,16 +2,16 @@
   "context": {
     "domain": "ONDC:LOG10",
     "country": "IND",
-    "city": "std:011",
+    "city": "std:080",
     "action": "on_issue",
     "core_version": "1.2.5",
     "bap_id": "dev-automation.ondc.org",
-    "bap_uri": "http://localhost:7123/api-service/ONDC:LOG10/1.2.5/buyer",
-    "message_id": "bdfd1406-c418-4730-b11d-abad4ad2ef51",
-    "timestamp": "2025-05-21T07:19:36.853Z",
-    "transaction_id": "a337f88b-2e67-43d4-9b65-5fd03b4eaf74",
+    "bap_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/buyer",
+    "message_id": "a8c7a70e-16d0-49f1-8425-c9a98a45cbb7",
+    "timestamp": "2025-05-28T06:50:05.897Z",
+    "transaction_id": "0bfd0f8e-17ae-4073-83db-4f8ab81d612a",
     "bpp_id": "dev-automation.ondc.org",
-    "bpp_uri": "http://localhost:7123/api-service/ONDC:LOG10/1.2.5/seller"
+    "bpp_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/seller"
   },
   "message": {
     "update_target": [
@@ -24,8 +24,8 @@
       "id": "ISSUE-1",
       "status": "RESOLVED",
       "level": "ISSUE",
-      "created_at": "2025-05-21T07:07:08.961Z",
-      "updated_at": "2025-05-21T07:19:36.870Z",
+      "created_at": "2025-05-28T06:49:54.727Z",
+      "updated_at": "2025-05-28T06:50:05.899Z",
       "expected_response_time": {
         "duration": "PT2H"
       },
@@ -363,8 +363,7 @@
             }
           ]
         }
-      ],
-      "complaint_id": "NP1"
+      ]
     }
   }
 }

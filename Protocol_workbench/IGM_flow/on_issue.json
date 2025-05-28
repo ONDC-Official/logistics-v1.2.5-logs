@@ -2,16 +2,16 @@
   "context": {
     "domain": "ONDC:LOG10",
     "country": "IND",
-    "city": "std:011",
+    "city": "std:080",
     "action": "on_issue",
     "core_version": "1.2.5",
     "bap_id": "dev-automation.ondc.org",
-    "bap_uri": "http://localhost:7123/api-service/ONDC:LOG10/1.2.5/buyer",
-    "message_id": "2d130463-72ff-4ba7-ba6f-3a4aac62cd79",
-    "timestamp": "2025-05-21T07:19:30.125Z",
-    "transaction_id": "a337f88b-2e67-43d4-9b65-5fd03b4eaf74",
+    "bap_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/buyer",
+    "message_id": "fe7165b9-fca6-4805-aa24-6abcffb66210",
+    "timestamp": "2025-05-28T06:49:56.231Z",
+    "transaction_id": "0bfd0f8e-17ae-4073-83db-4f8ab81d612a",
     "bpp_id": "dev-automation.ondc.org",
-    "bpp_uri": "http://localhost:7123/api-service/ONDC:LOG10/1.2.5/seller"
+    "bpp_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/seller"
   },
   "message": {
     "update_target": [
@@ -22,10 +22,10 @@
     ],
     "issue": {
       "id": "ISSUE-1",
-      "status": "NEED_MORE_INFO",
+      "status": "PROCESSING",
       "level": "ISSUE",
-      "created_at": "2025-05-21T07:07:08.961Z",
-      "updated_at": "2025-05-21T07:19:30.127Z",
+      "created_at": "2025-05-28T06:49:54.727Z",
+      "updated_at": "2025-05-28T06:49:56.234Z",
       "expected_response_time": {
         "duration": "PT2H"
       },
@@ -119,7 +119,7 @@
           }
         ]
       },
-      "last_action_id": "on_issue",
+      "last_action_id": "issue",
       "actions": [
         {
           "id": "A1",
@@ -139,40 +139,13 @@
             "code": "PROCESSING",
             "short_desc": "Complaint created"
           },
-          "updated_at": "2023-01-15T10:00:00.469Z",
-          "action_by": "NP2",
-          "actor_details": {
-            "name": "Sam Manuel"
-          }
-        },
-        {
-          "id": "A3_1",
-          "descriptor": {
-            "code": "INFO_REQUESTED",
-            "name": "INFO001",
-            "short_desc": "Please provide product images"
-          },
-          "updated_at": "2023-01-15T10:00:00.469Z",
-          "action_by": "NP2",
-          "actor_details": {
-            "name": "Sam Manuel"
-          }
-        },
-        {
-          "id": "A3_2",
-          "descriptor": {
-            "code": "INFO_REQUESTED",
-            "name": "INFO002",
-            "short_desc": "Please provide invoice"
-          },
-          "updated_at": "2023-01-15T10:00:00.469Z",
+          "updated_at": "2023-01-15T10:00:10.469Z",
           "action_by": "NP2",
           "actor_details": {
             "name": "Sam Manuel"
           }
         }
-      ],
-      "complaint_id": "NP1"
+      ]
     }
   }
 }
