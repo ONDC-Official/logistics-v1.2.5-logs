@@ -1,0 +1,236 @@
+{
+  "context": {
+    "domain": "ONDC:LOG10",
+    "country": "IND",
+    "city": "std:080",
+    "action": "update",
+    "core_version": "1.2.5",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/buyer",
+    "message_id": "3c4fd7c2-0c94-44f7-b972-b30a676c079b",
+    "timestamp": "2025-05-28T06:48:44.628Z",
+    "transaction_id": "0bfd0f8e-17ae-4073-83db-4f8ab81d612a",
+    "ttl": "PT30S",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/seller"
+  },
+  "message": {
+    "update_target": "fulfillment",
+    "order": {
+      "id": "cbbed5ec-0fed-4c77-b41b-99bcca1898cc",
+      "items": [
+        {
+          "id": "I1",
+          "category_id": "Standard Delivery"
+        }
+      ],
+      "fulfillments": [
+        {
+          "id": "1",
+          "type": "Delivery",
+          "start": {
+            "instructions": {
+              "code": "2",
+              "short_desc": "123123",
+              "long_desc": "additional instructions for pickup",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "http://description.com"
+              }
+            }
+          },
+          "end": {
+            "instructions": {
+              "code": "2",
+              "short_desc": "987657",
+              "long_desc": "additional instructions for delivery",
+              "additional_desc": {
+                "content_type": "text/html",
+                "url": "http://description.com"
+              }
+            }
+          },
+          "tags": [
+            {
+              "code": "linked_provider",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "P1"
+                },
+                {
+                  "code": "name",
+                  "value": "Seller1"
+                },
+                {
+                  "code": "address",
+                  "value": "My store name 1, My building name 1, My street name 1, my city 1, my state 1, 560001"
+                }
+              ]
+            },
+            {
+              "code": "linked_order",
+              "list": [
+                {
+                  "code": "id",
+                  "value": "RO1"
+                },
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "declared_value",
+                  "value": "300.0"
+                },
+                {
+                  "code": "weight_unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "weight_value",
+                  "value": "3.0"
+                },
+                {
+                  "code": "dim_unit",
+                  "value": "centimeter"
+                },
+                {
+                  "code": "length",
+                  "value": "1.0"
+                },
+                {
+                  "code": "breadth",
+                  "value": "1.0"
+                },
+                {
+                  "code": "height",
+                  "value": "1.0"
+                }
+              ]
+            },
+            {
+              "code": "linked_order_item",
+              "list": [
+                {
+                  "code": "category",
+                  "value": "F&B"
+                },
+                {
+                  "code": "name",
+                  "value": "Item1"
+                },
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "value",
+                  "value": "70.0"
+                },
+                {
+                  "code": "quantity",
+                  "value": "2"
+                },
+                {
+                  "code": "weight_unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "weight_value",
+                  "value": "1.0"
+                }
+              ]
+            },
+            {
+              "code": "linked_order_item",
+              "list": [
+                {
+                  "code": "category",
+                  "value": "F&B"
+                },
+                {
+                  "code": "name",
+                  "value": "Item2"
+                },
+                {
+                  "code": "currency",
+                  "value": "INR"
+                },
+                {
+                  "code": "value",
+                  "value": "160.0"
+                },
+                {
+                  "code": "quantity",
+                  "value": "1"
+                },
+                {
+                  "code": "weight_unit",
+                  "value": "kilogram"
+                },
+                {
+                  "code": "weight_value",
+                  "value": "1.0"
+                }
+              ]
+            },
+            {
+              "code": "state",
+              "list": [
+                {
+                  "code": "ready_to_ship",
+                  "value": "yes"
+                }
+              ]
+            }
+          ],
+          "tracking": true
+        }
+      ],
+      "@ondc/org/linked_order": {
+        "items": [
+          {
+            "category_id": "Grocery",
+            "descriptor": {
+              "name": "Atta"
+            },
+            "quantity": {
+              "count": 2,
+              "measure": {
+                "unit": "kilogram",
+                "value": 0.5
+              }
+            },
+            "price": {
+              "currency": "INR",
+              "value": "150.00"
+            }
+          }
+        ],
+        "order": {
+          "id": "O1",
+          "weight": {
+            "unit": "kilogram",
+            "value": 1
+          },
+          "dimensions": {
+            "length": {
+              "unit": "centimeter",
+              "value": 1
+            },
+            "breadth": {
+              "unit": "centimeter",
+              "value": 1
+            },
+            "height": {
+              "unit": "centimeter",
+              "value": 1
+            }
+          }
+        }
+      },
+      "updated_at": "2025-05-28T06:48:44.628Z"
+    }
+  }
+}
