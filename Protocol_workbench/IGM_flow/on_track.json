@@ -1,0 +1,66 @@
+{
+  "context": {
+    "domain": "ONDC:LOG10",
+    "country": "IND",
+    "city": "std:080",
+    "action": "on_track",
+    "core_version": "1.2.5",
+    "bap_id": "dev-automation.ondc.org",
+    "bap_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/buyer",
+    "message_id": "7766a4ce-3000-4069-8582-8f0a9dfb4dbc",
+    "timestamp": "2025-05-28T06:49:48.681Z",
+    "transaction_id": "0bfd0f8e-17ae-4073-83db-4f8ab81d612a",
+    "bpp_id": "dev-automation.ondc.org",
+    "bpp_uri": "https://dev-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/seller"
+  },
+  "message": {
+    "tracking": {
+      "id": "1",
+      "location": {
+        "gps": "12.9740,77.6134",
+        "time": {
+          "timestamp": "2025-05-28T06:49:48.681Z"
+        },
+        "updated_at": "2025-05-28T06:49:48.681Z"
+      },
+      "status": "active",
+      "tags": [
+        {
+          "code": "order",
+          "list": [
+            {
+              "code": "id",
+              "value": "cbbed5ec-0fed-4c77-b41b-99bcca1898cc"
+            }
+          ]
+        },
+        {
+          "code": "config",
+          "list": [
+            {
+              "code": "attr",
+              "value": "tracking.location.gps"
+            },
+            {
+              "code": "type",
+              "value": "live_poll"
+            }
+          ]
+        },
+        {
+          "code": "path",
+          "list": [
+            {
+              "code": "lat_lng",
+              "value": "12.9740,77.6134"
+            },
+            {
+              "code": "sequence",
+              "value": "1"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
