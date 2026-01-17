@@ -1,0 +1,332 @@
+ {
+        "context": {
+          "domain": "ONDC:LOG10",
+          "country": "IND",
+          "city": "std:080",
+          "action": "on_update",
+          "core_version": "1.2.5",
+          "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+          "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+          "message_id": "85facc29-464c-4f6a-ae01-ad63cd375805",
+          "timestamp": "2025-08-04T06:43:07.233Z",
+          "transaction_id": "188f48ac-1ef8-487f-b6ef-78378dbf163b",
+          "bpp_id": "staging-automation.ondc.org",
+          "bpp_uri": "https://staging-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/seller"
+        },
+        "message": {
+          "order": {
+            "id": "SS-1754289765480",
+            "state": "In-progress",
+            "provider": {
+              "id": "P1"
+            },
+            "items": [
+              {
+                "id": "I1",
+                "fulfillment_id": "1",
+                "category_id": "Standard Delivery",
+                "time": {
+                  "label": "TAT",
+                  "duration": "P2D",
+                  "timestamp": "2025-08-06"
+                }
+              }
+            ],
+            "quote": {
+              "price": {
+                "currency": "INR",
+                "value": "59.00"
+              },
+              "breakup": [
+                {
+                  "@ondc/org/item_id": "I1",
+                  "@ondc/org/title_type": "delivery",
+                  "price": {
+                    "currency": "INR",
+                    "value": "50.00"
+                  }
+                },
+                {
+                  "@ondc/org/item_id": "I1",
+                  "@ondc/org/title_type": "tax",
+                  "price": {
+                    "currency": "INR",
+                    "value": "9.00"
+                  }
+                }
+              ]
+            },
+            "fulfillments": [
+              {
+                "id": "1",
+                "type": "Delivery",
+                "start": {
+                  "location": {
+                    "id": "S1",
+                    "gps": "12.453544,77.928379",
+                    "address": {
+                      "name": "221",
+                      "building": "B",
+                      "locality": "Baker Street",
+                      "city": "Bangalore",
+                      "state": "Karnataka",
+                      "country": "India",
+                      "area_code": "560041"
+                    }
+                  },
+                  "contact": {
+                    "phone": "9876543210",
+                    "email": "sherlock@detective.com"
+                  },
+                  "instructions": {
+                    "code": "2",
+                    "short_desc": "1039",
+                    "long_desc": "additional instructions for pickup",
+                    "additional_desc": {
+                      "content_type": "text/html",
+                      "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
+                    }
+                  },
+                  "person": {
+                    "name": "221"
+                  },
+                  "time": {
+                    "duration": "PT12H",
+                    "range": {
+                      "start": "2025-08-04T06:43:07.233Z",
+                      "end": "2025-08-04T18:43:07.233Z"
+                    }
+                  }
+                },
+                "end": {
+                  "location": {
+                    "gps": "12.453544,77.928379",
+                    "address": {
+                      "name": "633",
+                      "building": "Stagtrail Rd",
+                      "locality": "N. Caldwell",
+                      "city": "Mumbai",
+                      "state": "Maharashtra",
+                      "country": "India",
+                      "area_code": "560001"
+                    }
+                  },
+                  "contact": {
+                    "phone": "9876543210",
+                    "email": "tony@soprano.com"
+                  },
+                  "person": {
+                    "name": "633"
+                  },
+                  "instructions": {
+                    "code": "2",
+                    "short_desc": "9789",
+                    "long_desc": "additional instructions for pickup",
+                    "additional_desc": {
+                      "content_type": "text/html",
+                      "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
+                    }
+                  },
+                  "time": {
+                    "range": {
+                      "start": "2025-08-04T18:43:07.233Z",
+                      "end": "2025-08-06T18:43:07.233Z"
+                    }
+                  }
+                },
+                "tags": [
+                  {
+                    "code": "linked_provider",
+                    "list": [
+                      {
+                        "code": "id",
+                        "value": "P1"
+                      },
+                      {
+                        "code": "name",
+                        "value": "Seller1"
+                      }
+                    ]
+                  },
+                  {
+                    "code": "linked_order",
+                    "list": [
+                      {
+                        "code": "currency",
+                        "value": "INR"
+                      },
+                      {
+                        "code": "declared_value",
+                        "value": "1000.00"
+                      },
+                      {
+                        "code": "weight_unit",
+                        "value": "kilogram"
+                      },
+                      {
+                        "code": "weight_value",
+                        "value": "2"
+                      },
+                      {
+                        "code": "dim_unit",
+                        "value": "centimeter"
+                      },
+                      {
+                        "code": "length",
+                        "value": "25"
+                      },
+                      {
+                        "code": "breadth",
+                        "value": "24"
+                      },
+                      {
+                        "code": "height",
+                        "value": "40"
+                      },
+                      {
+                        "code": "shipment_type",
+                        "value": "box"
+                      },
+                      {
+                        "code": "id",
+                        "value": "RO1"
+                      }
+                    ]
+                  }
+                ],
+                "state": {
+                  "descriptor": {
+                    "code": "Searching-for-Agent"
+                  }
+                },
+                "tracking": true
+              }
+            ],
+            "billing": {
+              "name": "ONDC Pramaan Logistics Buyer NP",
+              "address": {
+                "name": "221",
+                "building": "B",
+                "locality": "Baker Street",
+                "city": "Baker Street",
+                "state": "Karnataka",
+                "country": "India",
+                "area_code": "560041"
+              },
+              "tax_number": "00ABCDE1234F1Z5",
+              "phone": "9876543210",
+              "email": "sherlock@detective.com",
+              "created_at": "2025-08-04T06:41:58.499Z",
+              "updated_at": "2025-08-04T06:41:58.499Z"
+            },
+            "payment": {
+              "collected_by": "BAP",
+              "type": "ON-ORDER",
+              "@ondc/org/settlement_basis": "invoicing",
+              "@ondc/org/settlement_window": "P15D",
+              "@ondc/org/settlement_details": [
+                {
+                  "settlement_counterparty": "lbnp",
+                  "settlement_type": "upi",
+                  "beneficiary_name": "xxxxx",
+                  "upi_address": "gft@oksbi",
+                  "settlement_bank_account_no": "XXXXXXXXXX234",
+                  "settlement_ifsc_code": "XXXXXXX233"
+                }
+              ]
+            },
+            "@ondc/org/linked_order": {
+              "items": [
+                {
+                  "category_id": "Grocery",
+                  "descriptor": {
+                    "name": "Grocery"
+                  },
+                  "quantity": {
+                    "count": 2,
+                    "measure": {
+                      "unit": "kilogram",
+                      "value": 1
+                    }
+                  },
+                  "price": {
+                    "currency": "INR",
+                    "value": "1000.00"
+                  }
+                }
+              ],
+              "provider": {
+                "descriptor": {
+                  "name": "KitchenAura"
+                },
+                "address": {
+                  "name": "221",
+                  "building": "B",
+                  "locality": "Baker Street",
+                  "city": "Bangalore",
+                  "state": "Karnataka",
+                  "country": "India",
+                  "area_code": "560041"
+                }
+              },
+              "order": {
+                "id": "95950ce9-0a68-4375-bc9b-458c7b5a0d23",
+                "weight": {
+                  "unit": "kilogram",
+                  "value": 2
+                },
+                "dimensions": {
+                  "length": {
+                    "unit": "centimeter",
+                    "value": 25
+                  },
+                  "breadth": {
+                    "unit": "centimeter",
+                    "value": 24
+                  },
+                  "height": {
+                    "unit": "centimeter",
+                    "value": 40
+                  }
+                }
+              }
+            },
+            "updated_at": "2025-08-04T06:43:07.233Z",
+            "cancellation_terms": [
+              {
+                "fulfillment_state": {
+                  "descriptor": {
+                    "code": "Pending",
+                    "short_desc": "132"
+                  }
+                },
+                "cancellation_fee": {
+                  "percentage": "0.00"
+                }
+              },
+              {
+                "fulfillment_state": {
+                  "descriptor": {
+                    "code": "Agent-assigned",
+                    "short_desc": "102,103,105"
+                  }
+                },
+                "cancellation_fee": {
+                  "percentage": "100.00"
+                }
+              },
+              {
+                "fulfillment_state": {
+                  "descriptor": {
+                    "code": "Order-picked-up",
+                    "short_desc": "125,126,127,128"
+                  }
+                },
+                "cancellation_fee": {
+                  "percentage": "100.00"
+                }
+              }
+            ]
+          }
+        }
+      }

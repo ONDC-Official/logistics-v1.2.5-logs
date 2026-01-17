@@ -1,0 +1,20 @@
+{
+        "context": {
+          "domain": "ONDC:LOG10",
+          "country": "IND",
+          "city": "std:080",
+          "action": "track",
+          "core_version": "1.2.5",
+          "bap_id": "staging-automation.ondc.org",
+          "bap_uri": "https://staging-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/buyer",
+          "message_id": "b373540f-b139-4ced-8f9a-7056775c5edb",
+          "timestamp": "2025-08-02T04:16:03.676Z",
+          "transaction_id": "a5f0160e-9392-43e8-a4ad-3e8470dc2cea",
+          "ttl": "PT30S",
+          "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+          "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
+        },
+        "message": {
+          "order_id": "b6543383-c311-435d-9666-0d6bff8ddb01"
+        }
+      }

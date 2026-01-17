@@ -1,0 +1,154 @@
+ {
+        "context": {
+          "domain": "ONDC:LOG10",
+          "country": "IND",
+          "city": "std:080",
+          "core_version": "1.2.5",
+          "action": "search",
+          "transaction_id": "bc5b24cb-2180-42a3-8143-bbfdcd3b523f",
+          "message_id": "0e58cd14-04ef-47b4-a12c-06911ded501f",
+          "timestamp": "2025-08-04T06:32:03.913Z",
+          "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+          "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "intent": {
+            "category": {
+              "id": "Immediate Delivery"
+            },
+            "provider": {
+              "time": {
+                "days": "1,2,3,4,5,6,7",
+                "duration": "PT30M",
+                "range": {
+                  "start": "11:00",
+                  "end": "21:00"
+                },
+                "schedule": {
+                  "holidays": [
+                    "2025-09-02",
+                    "2025-08-17"
+                  ]
+                }
+              }
+            },
+            "fulfillment": {
+              "type": "Delivery",
+              "start": {
+                "location": {
+                  "gps": "12.453544,77.928379",
+                  "address": {
+                    "area_code": "560041"
+                  },
+                  "id": "S1"
+                }
+              },
+              "end": {
+                "location": {
+                  "gps": "12.453544,77.928379",
+                  "address": {
+                    "area_code": "560001"
+                  }
+                }
+              },
+              "tags": [
+                {
+                  "code": "linked_provider",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "P1"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Seller1"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order",
+                  "list": [
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "declared_value",
+                      "value": "1000.00"
+                    },
+                    {
+                      "code": "category",
+                      "value": "Grocery"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "2"
+                    },
+                    {
+                      "code": "dim_unit",
+                      "value": "centimeter"
+                    },
+                    {
+                      "code": "length",
+                      "value": "25"
+                    },
+                    {
+                      "code": "breadth",
+                      "value": "24"
+                    },
+                    {
+                      "code": "height",
+                      "value": "40"
+                    }
+                  ]
+                }
+              ]
+            },
+            "payment": {
+              "type": "ON-ORDER"
+            },
+            "@ondc/org/payload_details": {
+              "category": "Grocery",
+              "value": {
+                "currency": "INR",
+                "value": "1000.00"
+              },
+              "dangerous_goods": false,
+              "dimensions": {
+                "length": {
+                  "unit": "centimeter",
+                  "value": 25
+                },
+                "breadth": {
+                  "unit": "centimeter",
+                  "value": 24
+                },
+                "height": {
+                  "unit": "centimeter",
+                  "value": 40
+                }
+              },
+              "weight": {
+                "unit": "kilogram",
+                "value": 2
+              }
+            },
+            "tags": [
+              {
+                "code": "lbnp_features",
+                "list": [
+                  {
+                    "code": "00E",
+                    "value": "Yes"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }

@@ -1,0 +1,409 @@
+{
+      "context": {
+        "domain": "ONDC:LOG11",
+        "country": "IND",
+        "city": "std:080",
+        "action": "on_status",
+        "core_version": "1.2.5",
+        "bap_id": "staging-automation.ondc.org",
+        "bap_uri": "https://staging-automation.ondc.org/api-service/ONDC:LOG11/1.2.5/buyer",
+        "message_id": "88733af6-cd18-4670-a554-40cba4f4a87e",
+        "timestamp": "2025-08-11T03:22:23.486Z",
+        "transaction_id": "69c4fed0-30bd-4d3b-b79e-c4dc82271b5f",
+        "ttl": "PT30S",
+        "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+        "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
+      },
+      "message": {
+        "order": {
+          "id": "674e882f-bba7-4bd1-9566-14cbaa6dac99",
+          "state": "In-progress",
+          "provider": {
+            "id": "P1"
+          },
+          "items": [
+            {
+              "id": "exp_del",
+              "category_id": "Express Delivery",
+              "fulfillment_id": "15b35669-c712-4e78-8543-a81b07c28dcb",
+              "time": {
+                "label": "TAT",
+                "duration": "PT24H",
+                "timestamp": "2025-08-12"
+              }
+            }
+          ],
+          "quote": {
+            "price": {
+              "currency": "INR",
+              "value": "20.00"
+            },
+            "breakup": [
+              {
+                "price": {
+                  "currency": "INR",
+                  "value": "20.00"
+                },
+                "@ondc/org/item_id": "exp_del",
+                "@ondc/org/title_type": "delivery"
+              },
+              {
+                "price": {
+                  "currency": "INR",
+                  "value": "0.00"
+                },
+                "@ondc/org/item_id": "exp_del",
+                "@ondc/org/title_type": "tax"
+              }
+            ]
+          },
+          "fulfillments": [
+            {
+              "id": "15b35669-c712-4e78-8543-a81b07c28dcb",
+              "type": "Delivery",
+              "state": {
+                "descriptor": {
+                  "code": "In-transit"
+                }
+              },
+              "tracking": true,
+              "start": {
+                "location": {
+                  "id": "S1",
+                  "gps": "12.4535,77.9283",
+                  "address": {
+                    "name": "My store name 1",
+                    "building": "My building name 1",
+                    "locality": "My street name 1",
+                    "city": "my city 1",
+                    "state": "my state 1",
+                    "country": "India",
+                    "area_code": "560001"
+                  }
+                },
+                "contact": {
+                  "phone": "9886098860",
+                  "email": "abcd.efgh@gmail.com"
+                },
+                "time": {
+                  "duration": "PT15M",
+                  "range": {
+                    "start": "2025-08-11T09:00:00.000Z",
+                    "end": "2025-08-11T23:00:00.000Z"
+                  },
+                  "timestamp": "2025-08-11T03:22:10.285Z"
+                },
+                "person": {
+                  "name": "person_name_1"
+                }
+              },
+              "end": {
+                "location": {
+                  "gps": "12.4535,77.9283",
+                  "address": {
+                    "name": "My store name 2",
+                    "building": "My building name 2",
+                    "locality": "My street name 2",
+                    "city": "my city name 2",
+                    "state": "my state 2",
+                    "country": "India",
+                    "area_code": "560001"
+                  }
+                },
+                "contact": {
+                  "phone": "9123426789",
+                  "email": "xyz.qweq@gmail.com"
+                },
+                "person": {
+                  "name": "person_name_2"
+                },
+                "time": {
+                  "range": {
+                    "start": "2025-08-12T09:30:00.000Z",
+                    "end": "2025-08-12T19:00:00.000Z"
+                  }
+                }
+              },
+              "tags": [
+                {
+                  "code": "linked_provider",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "P1"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Seller1"
+                    },
+                    {
+                      "code": "address",
+                      "value": "My store name 1, My building name 1, My street name 1, my city 1, my state 1, 560001"
+                    },
+                    {
+                      "code": "tax_id",
+                      "value": "29GSTIN1234K2Z2"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order",
+                  "list": [
+                    {
+                      "code": "id",
+                      "value": "RO1"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "declared_value",
+                      "value": "300.0"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "3.0"
+                    },
+                    {
+                      "code": "dim_unit",
+                      "value": "centimeter"
+                    },
+                    {
+                      "code": "length",
+                      "value": "1.0"
+                    },
+                    {
+                      "code": "breadth",
+                      "value": "1.0"
+                    },
+                    {
+                      "code": "height",
+                      "value": "1.0"
+                    },
+                    {
+                      "code": "shipment_type",
+                      "value": "box"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order_item",
+                  "list": [
+                    {
+                      "code": "category",
+                      "value": "Fashion"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Item1"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "value",
+                      "value": "70.0"
+                    },
+                    {
+                      "code": "quantity",
+                      "value": "2"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "1.0"
+                    }
+                  ]
+                },
+                {
+                  "code": "linked_order_item",
+                  "list": [
+                    {
+                      "code": "category",
+                      "value": "Fashion"
+                    },
+                    {
+                      "code": "name",
+                      "value": "Item2"
+                    },
+                    {
+                      "code": "currency",
+                      "value": "INR"
+                    },
+                    {
+                      "code": "value",
+                      "value": "160.0"
+                    },
+                    {
+                      "code": "quantity",
+                      "value": "1"
+                    },
+                    {
+                      "code": "weight_unit",
+                      "value": "kilogram"
+                    },
+                    {
+                      "code": "weight_value",
+                      "value": "1.0"
+                    }
+                  ]
+                },
+                {
+                  "code": "shipping_label",
+                  "list": [
+                    {
+                      "code": "type",
+                      "value": "pdf"
+                    },
+                    {
+                      "code": "url",
+                      "value": "public link to pdf"
+                    }
+                  ]
+                },
+                {
+                  "code": "tracking",
+                  "list": [
+                    {
+                      "code": "gps_enabled",
+                      "value": "yes"
+                    },
+                    {
+                      "code": "url_enabled",
+                      "value": "yes"
+                    },
+                    {
+                      "code": "url",
+                      "value": "http://sequelstring-lsp-ondc.com/track"
+                    }
+                  ]
+                }
+              ],
+              "@ondc/org/awb_no": "15b35669-c712-4e78-8543-a81b07c28dcb",
+              "agent": {
+                "name": "Tom Hagen",
+                "phone": "9876543210"
+              },
+              "vehicle": {
+                "registration": "3LVJ945"
+              }
+            }
+          ],
+          "billing": {
+            "name": "ONDC Logistics Buyer NP",
+            "address": {
+              "name": "My house or building no",
+              "building": "My house or building name",
+              "locality": "Jayanagar",
+              "city": "Bengaluru",
+              "state": "Karnataka",
+              "country": "India",
+              "area_code": "560076"
+            },
+            "tax_number": "AS34234HKJ342KH",
+            "phone": "9886098860",
+            "email": "abcd.efgh@gmail.com",
+            "created_at": "2025-08-11T03:19:53.763Z",
+            "updated_at": "2025-08-11T03:19:53.763Z"
+          },
+          "payment": {
+            "type": "POST-FULFILLMENT",
+            "collected_by": "BAP",
+            "@ondc/org/settlement_basis": "invoicing",
+            "@ondc/org/settlement_window": "P15D",
+            "@ondc/org/settlement_details": [
+              {
+                "settlement_counterparty": "lbnp",
+                "settlement_type": "upi",
+                "upi_address": "gft@oksbi",
+                "settlement_bank_account_no": "123456789123456",
+                "settlement_ifsc_code": "SBI00001234"
+              }
+            ],
+            "status": "NOT-PAID"
+          },
+          "@ondc/org/linked_order": {
+            "items": [
+              {
+                "category_id": "Fashion",
+                "descriptor": {
+                  "name": "Item1"
+                },
+                "quantity": {
+                  "count": 2,
+                  "measure": {
+                    "unit": "kilogram",
+                    "value": 1
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "70.00"
+                }
+              },
+              {
+                "category_id": "Fashion",
+                "descriptor": {
+                  "name": "Item2"
+                },
+                "quantity": {
+                  "count": 1,
+                  "measure": {
+                    "unit": "kilogram",
+                    "value": 1
+                  }
+                },
+                "price": {
+                  "currency": "INR",
+                  "value": "160.00"
+                }
+              }
+            ],
+            "provider": {
+              "descriptor": {
+                "name": "Seller1"
+              },
+              "address": {
+                "name": "My store name 1",
+                "building": "My building name 1",
+                "locality": "My street name 1",
+                "city": "my city 1",
+                "state": "my state 1",
+                "area_code": "560001"
+              }
+            },
+            "order": {
+              "id": "O1",
+              "weight": {
+                "unit": "kilogram",
+                "value": 3
+              },
+              "dimensions": {
+                "length": {
+                  "unit": "centimeter",
+                  "value": 1
+                },
+                "breadth": {
+                  "unit": "centimeter",
+                  "value": 1
+                },
+                "height": {
+                  "unit": "centimeter",
+                  "value": 1
+                }
+              }
+            }
+          },
+          "updated_at": "2025-08-11T03:22:23.486Z"
+        }
+      }
+    }

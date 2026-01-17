@@ -1,0 +1,131 @@
+{
+        "context": {
+          "domain": "ONDC:LOG10",
+          "country": "IND",
+          "city": "std:080",
+          "action": "update",
+          "core_version": "1.2.5",
+          "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+          "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+          "message_id": "3607ade2-9525-4dae-9a2f-3cfbcad7b88a",
+          "timestamp": "2025-08-04T06:33:02.333Z",
+          "transaction_id": "bc5b24cb-2180-42a3-8143-bbfdcd3b523f",
+          "bpp_id": "staging-automation.ondc.org",
+          "bpp_uri": "https://staging-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/seller",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "update_target": "fulfillment",
+          "order": {
+            "id": "SS-1754289169245",
+            "items": [
+              {
+                "id": "I1",
+                "category_id": "Immediate Delivery"
+              }
+            ],
+            "fulfillments": [
+              {
+                "id": "1",
+                "type": "Delivery",
+                "start": {
+                  "instructions": {
+                    "code": "2",
+                    "short_desc": "Z600",
+                    "long_desc": "additional instructions for pickup",
+                    "additional_desc": {
+                      "content_type": "text/html",
+                      "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
+                    }
+                  }
+                },
+                "end": {
+                  "instructions": {
+                    "code": "2",
+                    "short_desc": "L961",
+                    "long_desc": "additional instructions for pickup",
+                    "additional_desc": {
+                      "content_type": "text/html",
+                      "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
+                    }
+                  }
+                },
+                "tags": [
+                  {
+                    "code": "state",
+                    "list": [
+                      {
+                        "code": "order_ready",
+                        "value": "yes"
+                      }
+                    ]
+                  },
+                  {
+                    "code": "linked_provider",
+                    "list": [
+                      {
+                        "code": "id",
+                        "value": "P1"
+                      },
+                      {
+                        "code": "name",
+                        "value": "Seller1"
+                      }
+                    ]
+                  },
+                  {
+                    "code": "linked_order",
+                    "list": [
+                      {
+                        "code": "currency",
+                        "value": "INR"
+                      },
+                      {
+                        "code": "declared_value",
+                        "value": "1000.00"
+                      },
+                      {
+                        "code": "weight_unit",
+                        "value": "kilogram"
+                      },
+                      {
+                        "code": "weight_value",
+                        "value": "2"
+                      },
+                      {
+                        "code": "dim_unit",
+                        "value": "centimeter"
+                      },
+                      {
+                        "code": "length",
+                        "value": "25"
+                      },
+                      {
+                        "code": "breadth",
+                        "value": "24"
+                      },
+                      {
+                        "code": "height",
+                        "value": "40"
+                      },
+                      {
+                        "code": "prep_time",
+                        "value": "PT30M"
+                      },
+                      {
+                        "code": "shipment_type",
+                        "value": "box"
+                      },
+                      {
+                        "code": "id",
+                        "value": "RO1"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "updated_at": "2025-08-04T06:33:02.333Z"
+          }
+        }
+      }

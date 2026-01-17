@@ -1,0 +1,134 @@
+ {
+        "context": {
+          "domain": "ONDC:LOG11",
+          "country": "IND",
+          "city": "std:080",
+          "action": "on_search",
+          "core_version": "1.2.5",
+          "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+          "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+          "message_id": "1efa0dd5-9881-4c94-a872-81400923698f",
+          "timestamp": "2025-08-04T15:32:46.882Z",
+          "transaction_id": "1999f55a-717e-4593-a7f3-5c0f55712cbb",
+          "bpp_id": "staging-automation.ondc.org",
+          "bpp_uri": "https://staging-automation.ondc.org/api-service/ONDC:LOG11/1.2.5/seller"
+        },
+        "message": {
+          "catalog": {
+            "bpp/descriptor": {
+              "name": "LSP Aggregator Inc",
+              "tags": [
+                {
+                  "code": "bpp_terms",
+                  "list": [
+                    {
+                      "code": "static_terms",
+                      "value": ""
+                    },
+                    {
+                      "code": "static_terms_new",
+                      "value": "https://github.com/ONDC-Official/NP-Static-Terms/lspNP_LSP/1.0/tc.pdf"
+                    },
+                    {
+                      "code": "effective_date",
+                      "value": "2025-08-04T15:32:46.882Z"
+                    }
+                  ]
+                }
+              ]
+            },
+            "bpp/providers": [
+              {
+                "id": "P1",
+                "descriptor": {
+                  "name": "LSP Courier Inc",
+                  "short_desc": "LSP Courier Inc",
+                  "long_desc": "LSP Courier Inc"
+                },
+                "categories": [
+                  {
+                    "id": "Express Delivery",
+                    "time": {
+                      "label": "TAT",
+                      "duration": "P3D",
+                      "timestamp": "2025-08-07"
+                    }
+                  }
+                ],
+                "fulfillments": [
+                  {
+                    "id": "1",
+                    "type": "Delivery",
+                    "start": {
+                      "time": {
+                        "duration": "P1D"
+                      }
+                    },
+                    "tags": [
+                      {
+                        "code": "distance",
+                        "list": [
+                          {
+                            "code": "motorable_distance_type",
+                            "value": "kilometer"
+                          },
+                          {
+                            "code": "motorable_distance",
+                            "value": "1.8"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "id": "2",
+                    "type": "RTO"
+                  }
+                ],
+                "items": [
+                  {
+                    "id": "I1",
+                    "parent_item_id": "",
+                    "category_id": "Express Delivery",
+                    "fulfillment_id": "1",
+                    "descriptor": {
+                      "name": "Fast delivery",
+                      "short_desc": "Fast delivery services",
+                      "long_desc": "Fast delivery services"
+                    },
+                    "price": {
+                      "currency": "INR",
+                      "value": "59.00"
+                    },
+                    "time": {
+                      "label": "TAT",
+                      "duration": "P3D",
+                      "timestamp": "2025-08-07"
+                    }
+                  },
+                  {
+                    "id": "I2",
+                    "parent_item_id": "I1",
+                    "category_id": "Express Delivery",
+                    "fulfillment_id": "2",
+                    "descriptor": {
+                      "name": "RTO quote",
+                      "short_desc": "RTO quote",
+                      "long_desc": "RTO quote"
+                    },
+                    "price": {
+                      "currency": "INR",
+                      "value": "88.50"
+                    },
+                    "time": {
+                      "label": "TAT",
+                      "duration": "P3D",
+                      "timestamp": "2025-08-07"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }

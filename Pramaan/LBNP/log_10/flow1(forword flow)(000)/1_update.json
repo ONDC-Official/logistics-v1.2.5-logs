@@ -1,0 +1,127 @@
+ {
+        "context": {
+          "domain": "ONDC:LOG10",
+          "country": "IND",
+          "city": "std:080",
+          "action": "update",
+          "core_version": "1.2.5",
+          "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+          "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+          "message_id": "3d860160-7a88-4e1f-a9f6-0737e9fff6bb",
+          "timestamp": "2025-08-02T04:36:01.682Z",
+          "transaction_id": "c69ceb3f-49de-411b-b32a-8e65dbda66c2",
+          "bpp_id": "staging-automation.ondc.org",
+          "bpp_uri": "https://staging-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/seller",
+          "ttl": "PT30S"
+        },
+        "message": {
+          "update_target": "fulfillment",
+          "order": {
+            "id": "SS-1754109339158",
+            "items": [
+              {
+                "id": "I1",
+                "category_id": "Standard Delivery"
+              }
+            ],
+            "fulfillments": [
+              {
+                "id": "1",
+                "type": "Delivery",
+                "start": {
+                  "instructions": {
+                    "code": "2",
+                    "short_desc": "7066",
+                    "long_desc": "additional instructions for pickup",
+                    "additional_desc": {
+                      "content_type": "text/html",
+                      "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
+                    }
+                  }
+                },
+                "end": {
+                  "instructions": {
+                    "code": "2",
+                    "short_desc": "1451",
+                    "long_desc": "additional instructions for pickup",
+                    "additional_desc": {
+                      "content_type": "text/html",
+                      "url": "https://ondc.sequelstring.com/logistics/instructions/2848"
+                    }
+                  }
+                },
+                "tags": [
+                  {
+                    "code": "state",
+                    "list": [
+                      {
+                        "code": "ready_to_ship",
+                        "value": "yes"
+                      }
+                    ]
+                  },
+                  {
+                    "code": "linked_provider",
+                    "list": [
+                      {
+                        "code": "id",
+                        "value": "P1"
+                      },
+                      {
+                        "code": "name",
+                        "value": "Seller1"
+                      }
+                    ]
+                  },
+                  {
+                    "code": "linked_order",
+                    "list": [
+                      {
+                        "code": "currency",
+                        "value": "INR"
+                      },
+                      {
+                        "code": "declared_value",
+                        "value": "1000.00"
+                      },
+                      {
+                        "code": "weight_unit",
+                        "value": "kilogram"
+                      },
+                      {
+                        "code": "weight_value",
+                        "value": "2"
+                      },
+                      {
+                        "code": "dim_unit",
+                        "value": "centimeter"
+                      },
+                      {
+                        "code": "length",
+                        "value": "25"
+                      },
+                      {
+                        "code": "breadth",
+                        "value": "24"
+                      },
+                      {
+                        "code": "height",
+                        "value": "40"
+                      },
+                      {
+                        "code": "shipment_type",
+                        "value": "box"
+                      },
+                      {
+                        "code": "id",
+                        "value": "RO1"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "updated_at": "2025-08-02T04:36:01.682Z"
+          }
+        }
+      }

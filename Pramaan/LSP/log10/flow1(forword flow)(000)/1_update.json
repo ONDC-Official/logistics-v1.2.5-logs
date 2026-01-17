@@ -1,0 +1,236 @@
+ {
+        "context": {
+          "domain": "ONDC:LOG10",
+          "country": "IND",
+          "city": "std:080",
+          "action": "update",
+          "core_version": "1.2.5",
+          "bap_id": "staging-automation.ondc.org",
+          "bap_uri": "https://staging-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/buyer",
+          "message_id": "932d6dc1-4c69-4c4c-87ac-e48e15c38e68",
+          "timestamp": "2025-08-02T04:14:42.134Z",
+          "transaction_id": "a5f0160e-9392-43e8-a4ad-3e8470dc2cea",
+          "ttl": "PT30S",
+          "bpp_id": "pramaan.ondc.org/beta/preprod/mock/seller",
+          "bpp_uri": "https://pramaan.ondc.org/beta/preprod/mock/seller"
+        },
+        "message": {
+          "update_target": "fulfillment",
+          "order": {
+            "id": "b6543383-c311-435d-9666-0d6bff8ddb01",
+            "items": [
+              {
+                "id": "std_del",
+                "category_id": "Standard Delivery"
+              }
+            ],
+            "fulfillments": [
+              {
+                "id": "4e510bf6-8e60-4c98-80cd-dc5361b7b2b3",
+                "type": "Delivery",
+                "tracking": true,
+                "start": {
+                  "instructions": {
+                    "code": "2",
+                    "short_desc": "123123",
+                    "long_desc": "additional instructions for pickup",
+                    "additional_desc": {
+                      "content_type": "text/html",
+                      "url": "http://description.com"
+                    }
+                  }
+                },
+                "end": {
+                  "instructions": {
+                    "code": "2",
+                    "short_desc": "987657",
+                    "long_desc": "additional instructions for delivery",
+                    "additional_desc": {
+                      "content_type": "text/html",
+                      "url": "http://description.com"
+                    }
+                  }
+                },
+                "tags": [
+                  {
+                    "code": "linked_provider",
+                    "list": [
+                      {
+                        "code": "id",
+                        "value": "P1"
+                      },
+                      {
+                        "code": "name",
+                        "value": "Seller1"
+                      },
+                      {
+                        "code": "address",
+                        "value": "My store name 1, My building name 1, My street name 1, my city 1, my state 1, 560001"
+                      }
+                    ]
+                  },
+                  {
+                    "code": "linked_order",
+                    "list": [
+                      {
+                        "code": "id",
+                        "value": "RO1"
+                      },
+                      {
+                        "code": "currency",
+                        "value": "INR"
+                      },
+                      {
+                        "code": "declared_value",
+                        "value": "300.0"
+                      },
+                      {
+                        "code": "weight_unit",
+                        "value": "kilogram"
+                      },
+                      {
+                        "code": "weight_value",
+                        "value": "3.0"
+                      },
+                      {
+                        "code": "dim_unit",
+                        "value": "centimeter"
+                      },
+                      {
+                        "code": "length",
+                        "value": "1.0"
+                      },
+                      {
+                        "code": "breadth",
+                        "value": "1.0"
+                      },
+                      {
+                        "code": "height",
+                        "value": "1.0"
+                      }
+                    ]
+                  },
+                  {
+                    "code": "linked_order_item",
+                    "list": [
+                      {
+                        "code": "category",
+                        "value": "F&B"
+                      },
+                      {
+                        "code": "name",
+                        "value": "Item1"
+                      },
+                      {
+                        "code": "currency",
+                        "value": "INR"
+                      },
+                      {
+                        "code": "value",
+                        "value": "70.0"
+                      },
+                      {
+                        "code": "quantity",
+                        "value": "2"
+                      },
+                      {
+                        "code": "weight_unit",
+                        "value": "kilogram"
+                      },
+                      {
+                        "code": "weight_value",
+                        "value": "1.0"
+                      }
+                    ]
+                  },
+                  {
+                    "code": "linked_order_item",
+                    "list": [
+                      {
+                        "code": "category",
+                        "value": "F&B"
+                      },
+                      {
+                        "code": "name",
+                        "value": "Item2"
+                      },
+                      {
+                        "code": "currency",
+                        "value": "INR"
+                      },
+                      {
+                        "code": "value",
+                        "value": "160.0"
+                      },
+                      {
+                        "code": "quantity",
+                        "value": "1"
+                      },
+                      {
+                        "code": "weight_unit",
+                        "value": "kilogram"
+                      },
+                      {
+                        "code": "weight_value",
+                        "value": "1.0"
+                      }
+                    ]
+                  },
+                  {
+                    "code": "state",
+                    "list": [
+                      {
+                        "code": "ready_to_ship",
+                        "value": "yes"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "@ondc/org/linked_order": {
+              "items": [
+                {
+                  "category_id": "Grocery",
+                  "descriptor": {
+                    "name": "Atta"
+                  },
+                  "quantity": {
+                    "count": 2,
+                    "measure": {
+                      "unit": "kilogram",
+                      "value": 0.5
+                    }
+                  },
+                  "price": {
+                    "currency": "INR",
+                    "value": "150.00"
+                  }
+                }
+              ],
+              "order": {
+                "id": "O1",
+                "weight": {
+                  "unit": "kilogram",
+                  "value": 1
+                },
+                "dimensions": {
+                  "length": {
+                    "unit": "centimeter",
+                    "value": 1
+                  },
+                  "breadth": {
+                    "unit": "centimeter",
+                    "value": 1
+                  },
+                  "height": {
+                    "unit": "centimeter",
+                    "value": 1
+                  }
+                }
+              }
+            },
+            "updated_at": "2025-08-02T04:14:42.134Z"
+          }
+        }
+      }

@@ -1,0 +1,66 @@
+{
+        "context": {
+          "domain": "ONDC:LOG10",
+          "country": "IND",
+          "city": "std:080",
+          "action": "on_track",
+          "core_version": "1.2.5",
+          "bap_id": "pramaan.ondc.org/beta/preprod/mock/buyer",
+          "bap_uri": "https://pramaan.ondc.org/beta/preprod/mock/buyer",
+          "message_id": "bfd005dc-3c14-4e59-ae28-7814416a7866",
+          "timestamp": "2025-08-02T04:36:22.533Z",
+          "transaction_id": "c69ceb3f-49de-411b-b32a-8e65dbda66c2",
+          "bpp_id": "staging-automation.ondc.org",
+          "bpp_uri": "https://staging-automation.ondc.org/api-service/ONDC:LOG10/1.2.5/seller"
+        },
+        "message": {
+          "tracking": {
+            "id": "1",
+            "location": {
+              "gps": "12.9740,77.6134",
+              "time": {
+                "timestamp": "2025-08-02T04:36:22.533Z"
+              },
+              "updated_at": "2025-08-02T04:36:22.533Z"
+            },
+            "status": "active",
+            "tags": [
+              {
+                "code": "order",
+                "list": [
+                  {
+                    "code": "id",
+                    "value": "SS-1754109339158"
+                  }
+                ]
+              },
+              {
+                "code": "config",
+                "list": [
+                  {
+                    "code": "attr",
+                    "value": "tracking.location.gps"
+                  },
+                  {
+                    "code": "type",
+                    "value": "live_poll"
+                  }
+                ]
+              },
+              {
+                "code": "path",
+                "list": [
+                  {
+                    "code": "lat_lng",
+                    "value": "12.9740,77.6134"
+                  },
+                  {
+                    "code": "sequence",
+                    "value": "1"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
